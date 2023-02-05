@@ -5,7 +5,6 @@ import java.util.UUID;
 import com.parking.lot.exceptions.InvalidParkingFloorException;
 import com.parking.lot.models.account.Address;
 import com.parking.lot.models.account.User;
-import com.parking.lot.models.account.UserType;
 import com.parking.lot.models.parking.CarParkingSpot;
 import com.parking.lot.models.parking.EntrancePanel;
 import com.parking.lot.models.parking.ExitPanel;

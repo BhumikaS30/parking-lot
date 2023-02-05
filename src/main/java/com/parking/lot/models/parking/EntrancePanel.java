@@ -1,15 +1,12 @@
 package com.parking.lot.models.parking;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 import com.parking.lot.models.vehicle.Vehicle;
-import com.parking.lot.models.vehicle.VehicleType;
 
 import lombok.Getter;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
 import static java.util.UUID.randomUUID;
 
 @Getter

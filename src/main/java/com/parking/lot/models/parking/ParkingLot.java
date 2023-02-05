@@ -2,21 +2,15 @@ package com.parking.lot.models.parking;
 
 import java.util.ArrayList;
 import java.util.BitSet;
-import java.util.Deque;
 import java.util.List;
 
 import com.parking.lot.models.account.Address;
-import com.parking.lot.models.vehicle.Vehicle;
 import com.parking.lot.models.vehicle.VehicleType;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import static com.parking.lot.models.parking.ParkingFloor.getSpotTypeForVehicle;
-import static com.parking.lot.models.parking.ParkingSpotType.CAR;
-import static com.parking.lot.models.parking.ParkingSpotType.ELECTRIC;
-import static com.parking.lot.models.parking.ParkingSpotType.LARGE;
-import static com.parking.lot.models.parking.ParkingSpotType.MOTORBIKE;
 import static java.util.Objects.nonNull;
 
 @Getter

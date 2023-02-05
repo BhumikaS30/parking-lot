@@ -1,7 +1,5 @@
 package com.parking.lot.models.parking;
 
-import com.parking.lot.models.vehicle.Vehicle;
-
 import lombok.Getter;
 import lombok.Setter;
 

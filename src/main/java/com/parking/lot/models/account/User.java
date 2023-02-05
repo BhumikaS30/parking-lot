@@ -25,8 +25,6 @@ public class User {
 
     private Address address;
 
-    private PersonalInfo userDetails;
-
     private UserType userType;
 
     public User(UserType userType) {

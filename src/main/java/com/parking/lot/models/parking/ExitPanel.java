@@ -3,8 +3,6 @@ package com.parking.lot.models.parking;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
-import com.parking.lot.models.vehicle.Vehicle;
-
 import lombok.Getter;
 
 @Getter

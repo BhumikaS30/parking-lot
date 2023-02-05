@@ -43,7 +43,7 @@ public class ParkingFloor {
         BitSet bitSet = new BitSet();
         int index = 0;
         for (Map.Entry<ParkingSpotType, Deque<ParkingSpot>> entry : parkingSpots.entrySet()) {
-            if (entry.getValue().size() == 0) {
+            if (entry.getValue().isEmpty()) {
                 bitSet.set(index++);
             } else {
                 break;
@@ -62,7 +62,7 @@ public class ParkingFloor {
     }
 
     public boolean canPark(ParkingSpotType spotTypeForVehicle) {
-        return parkingSpots.get(spotTypeForVehicle).size() > 0;
+        return !parkingSpots.get(spotTypeForVehicle).isEmpty();
     }
 
     public synchronized ParkingSpot getSpot(VehicleType vehicleType) {

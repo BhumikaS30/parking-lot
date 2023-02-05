@@ -10,11 +10,11 @@ import static com.parking.lot.models.parking.PaymentStatus.SUCCESS;
 @Getter
 public class Payment {
 
-    private String id;
+    private final String id;
 
-    private String ticketId;
+    private final String ticketId;
 
-    private double amount;
+    private final double amount;
 
     @Setter
     private LocalDateTime initiatedDate;

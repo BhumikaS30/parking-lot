@@ -1,6 +1,6 @@
 ## Design Parking lot
 
-![Image of Parking lot](https://en.wikipedia.org/wiki/Parking_lot#/media/File:Bad_car_parking.jpg)
+![Image of Parking lot](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Car_park_sensor.jpg/2880px-Car_park_sensor.jpg)
 
 Parking lot has multiple floors, multiple entry and exit points.  
 Entry is recorded at entry point and payment is done at the time of exit.  

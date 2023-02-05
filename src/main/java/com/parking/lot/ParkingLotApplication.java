@@ -73,7 +73,7 @@ public class ParkingLotApplication {
         System.out.println(ParkingLot.INSTANCE.canPark(VehicleType.ELECTRIC));
 
         // TEST case 4 - Check if full
-        System.out.println(ParkingLot.INSTANCE.isFull());
+        System.out.println("Check if full " + ParkingLot.INSTANCE.isFull());
 
         // Test case 5 - get parking spot
         Vehicle vehicle = new Car("KA05MR2311");

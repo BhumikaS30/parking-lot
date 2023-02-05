@@ -1,6 +1,5 @@
 package com.parking.lot.models.parking;
 
-import java.util.BitSet;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.Map;
@@ -40,16 +39,12 @@ public class ParkingFloor {
     }
 
     public boolean isFloorFull() {
-        BitSet bitSet = new BitSet();
-        int index = 0;
         for (Map.Entry<ParkingSpotType, Deque<ParkingSpot>> entry : parkingSpots.entrySet()) {
             if (entry.getValue().isEmpty()) {
-                bitSet.set(index++);
-            } else {
-                break;
+                return false;
             }
         }
-        return bitSet.cardinality() == bitSet.size();
+        return true;
     }
 
     public static ParkingSpotType getSpotTypeForVehicle(VehicleType vehicleType) {

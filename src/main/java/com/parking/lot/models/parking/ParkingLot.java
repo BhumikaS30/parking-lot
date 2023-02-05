@@ -1,7 +1,6 @@
 package com.parking.lot.models.parking;
 
 import java.util.ArrayList;
-import java.util.BitSet;
 import java.util.List;
 
 import com.parking.lot.models.account.Address;
@@ -36,12 +35,12 @@ public class ParkingLot {
     }
 
     public boolean isFull() {
-        int index = 0;
-        BitSet bitSet = new BitSet();
         for (ParkingFloor parkingFloor : parkingFloors) {
-            bitSet.set(index++, parkingFloor.isFloorFull());
+            if (!parkingFloor.isFloorFull()) {
+                return false;
+            }
         }
-        return bitSet.cardinality() == bitSet.size();
+        return true;
     }
 
     public boolean canPark(VehicleType vehicleType) {
